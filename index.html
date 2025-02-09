@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Accessible Form">
+    <meta name="author" content="Larry Last Murimi">
+
+    <meta property="og:title" content="Larry Last Murimi -Accessible Form">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="linkedin.com/in/larrymurimi">
+    <meta property="og:image" content="linkedin.com/in/larrymurimi">
+    <meta property="og:description" content="Accessible Form">
+    <meta property="og:site_name" content="Larry Murimi Accessible Form">
+
+    <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="/Accessible Form UI/index.css">
+
+    <!--fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+
+    <form action="">
+        <label for="fname">Full Name</label>
+        <input type="text" name="fname" id="fname" placeholder="What should we call you?">
+        <label for="email">Email</label>
+        <div class="emailcontainer">
+            <input type="email" class="email" name="email" id="email" required placeholder="John@doe.com">
+            <p>Email is already taken</p>
+        </div>
+        
+        <label for="password">Enter Password</label>
+        <div class="passcontainer">
+            <input type="password" name="pass" id="pass" placeholder="xxxxxxxx">
+            <button id="toggle-pass" class="toggle-button">
+                <img src="/Accessible Form UI/view.png" alt="" width="20px" >
+            </button>
+        </div>
+
+        <label for="confirm-pass">Confirm Password</label>
+        <div class="passcontainer">
+            <input type="password" name="pass2" id="pass2" placeholder="xxxxxxxx">
+            <button id="toggle-pass" class="toggle-button">
+                <img src="/Accessible Form UI/view.png" alt="" width="20px" >
+            </button>
+        </div>
+
+        <input type="button" value="Update Profile" class="btn">
+    </form>
+    <div class="progress">
+        <div class="completeness">
+            <div class="simple-progress-circle">
+                <div class="simple-progress-value">65%</div>
+            </div>
+        </div>
+        <h3>Profile Completeness</h3>
+        <div class="todo">
+            <ul>
+                <li class="done">Create Account</li>
+                <li class="done">Update Roadmap Progress</li>
+                <li class="done">Setup Public Profile</li>
+                <li>Complete your first project</li>
+                <li>Invite your friends</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
